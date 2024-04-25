@@ -9,7 +9,7 @@ function longestSubstring(s) {
         
         
         if (charIndexMap.has(currentChar) && charIndexMap.get(currentChar) >= start) {
-            // Update the start index of the current substring to the index of the repeating character + 1
+            
             start = charIndexMap.get(currentChar) + 1;
         }
         
