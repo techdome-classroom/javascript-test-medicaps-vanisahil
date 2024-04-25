@@ -3,11 +3,11 @@ function longestSubstring(s) {
     let start = 0;
     const charIndexMap = new Map(); 
     
-    // Loop through each character in the string
+   
     for (let end = 0; end < s.length; end++) {
         const currentChar = s[end];
         
-        // If the character is already in the map and its index is after the start index of the current substring
+        
         if (charIndexMap.has(currentChar) && charIndexMap.get(currentChar) >= start) {
             // Update the start index of the current substring to the index of the repeating character + 1
             start = charIndexMap.get(currentChar) + 1;
