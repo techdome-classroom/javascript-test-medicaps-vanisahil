@@ -6,7 +6,8 @@ function longestSubstring(s) {
    
     for (let end = 0; end < s.length; end++) {
         const currentChar = s[end];
-       
+    
+        
      
     
     return longest;
